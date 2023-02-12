@@ -1,0 +1,150 @@
+<!--************************************************************************************
+                                             Header section 
+    ****************************************************************************************-->
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deshsoft - Dashboard">
+    <meta name="author" content="Belostemas">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho">
+    <!--Morris Chart CSS -->
+    <!-- <link rel="stylesheet" href="assets/plugins/morris/morris.css"> -->
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/client.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="assets/js/modernizr.min.js"></script> -->
+</head>
+
+<body class="fixed-left">
+    <!-- <div id="droba-loader">
+                <div class="loader"></div>
+            </div> -->
+    <!-- Begin page -->
+    <!-- <div id="wrapper"> -->
+    <!-- Top Bar Start -->
+    <div class="topbar">
+        <!-- LOGO -->
+        <div class="topbar-left">
+            <a href="index.html" class="logo">
+                <img class="flgo" src="assets/images/prontosmart1.png" alt="Logo">
+                <!-- <img class="slgo" src="assets/images/slogo.png" alt="Logo"> -->
+            </a>
+        </div>
+        <!-- Button mobile view to collapse sidebar menu -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Page title -->
+                <ul class="nav navbar-nav list-inline navbar-left">
+                    <li class="list-inline-item">
+                        <button class="button-menu-mobile open-left">
+                            <i class="ti-layout-grid2" id="icon"></i>
+                        </button>
+                    </li>
+                    <li class="list-inline-item">
+                        <h4 class="page-title"></h4>
+                    </li>
+                </ul>
+                <nav class="navbar-custom">
+                    <!-- <ul class="list-unstyled topbar-right-menu float-right mb-0">
+                                <li class="dropdown dropslide">
+                                    <a class="nav-link" href="index-2.html#" id="navbarDropdownProfile" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <img src="assets/images/profile.jpg" alt="user-img"
+                                            class="rounded-circle img-thumbnail img-responsive">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
+                                        <a class="dropdown-item" href="?p=profile"><i class="mdi mdi-account"></i>
+                                            Profile</a>
+                                        <a class="dropdown-item" href="?p=change_pass"><i class="mdi mdi-key"></i>
+                                            Change Password</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="logout.php"><i class="mdi mdi-power"></i> Logout</a>
+                                    </div>
+                                </li>
+                            </ul> -->
+                    <a class="dropdown-item" href="logout.php"><i class="mdi mdi-power"></i> Logout</a>
+                </nav>
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end navbar -->
+    </div>
+    <!-- Top Bar End -->
+    <!--***************************************************************************************
+                                                     Sidebar section 
+            ****************************************************************************************-->
+    <div class="left side-menu" id="left">
+        <div class="sidebar-inner slimscrollleft">
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+                <ul>
+                    <li class="has_sub">
+                        <a href="index.html" class="waves-effect"><i class="mdi mdi-view-grid"></i> <span>Dashboard
+                            </span> <i class="mdi mdi-chevron-rightt"></i></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="has_sub">
+                        <a class="waves-effect"><i class="mdi mdi-account-multiple"></i> <span>Access Control
+                            </span> <i class="mdi mdi-chevron-right"></i></a>
+                        <ul class="list-unstyled">
+                            <!-- <li><a href="?p=users">Users</a></li> -->
+                            <li><a href="client.html">Users</a></li>
+                            <li><a href="mobile.html">Mobile Description</a></li>
+                            <li><a href="job.html">Job Description</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <!-- Sidebar -->
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+    <div class="content-page">
+        <div class="content">
+            <div class="container-fluid">
+                <!-- <h1></h1> -->
+                <form class="form-container">
+                    <h1>Mobile Description</h1>
+                    <div class="form-group">
+                        <label for="brand_name">Brand Name:</label>
+                        <input type="text" id="brand_name" name="brand_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="model_no">Model No:</label>
+                        <input type="text" id="model_no" name="model_no" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pin">PIN:</label>
+                        <input type="number" id="pin" name="pin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Pattern">Pattern:</label>
+                        <input type="text" id="Pattern" name="Pattern" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="imei_no">Imei no:</label>
+                        <input type="number" id="imei_no" name="imei_no" required>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+
+        <script src="side.js"></script>
